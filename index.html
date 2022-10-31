@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google İcon -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <!-- Main Css File -->
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Password Creator App</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <!-- background -->
+        <canvas id="c"></canvas>
+        <!-- background -->
+
+        <h2>Parola Oluşturucu</h2>
+        <div class="wrapper">
+            <div class="input-box">
+                <input type="text" disabled>
+                <span title="kopyalamak için tıklayın" class="material-symbols-outlined">copy_all</span>
+            </div>
+            <div class="pass-indicator">
+                <div class="pass-length">
+                    <div class="details">
+                        <label class="title">Parola Uzunluğu</label>
+                        <span></span>
+                    </div>
+                    <input type="range" min="1" max="30" step="1" value="10">
+                </div>
+                <div class="pass-settings">
+                    <label class="title">Parola Ayarları</label>
+                    <ul class="options">
+                        <li class="option">
+                            <input type="checkbox" id="lowercase" checked>
+                            <label for="lowercase">Küçük Harf (a-z)</label>
+                        </li>
+
+                        <li class="option">
+                            <input type="checkbox" id="numbers">
+                            <label for="numbers">Sayılar (0-9)</label>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" id="exclude">
+                            <label for="exclude">Benzersiz</label>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" id="uppercase">
+                            <label for="uppercase">Büyük Harf (A-Z)</label>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" id="symbols">
+                            <label for="symbols">Semboller (!-$^+ )</label>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" id="space">
+                            <label for="space">Boşlukları Dahil Et</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="generateBtn">Parola Oluştur</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="background.js"></script>
+    <script src="main.js"></script>
+</body>
+
+
+</html>

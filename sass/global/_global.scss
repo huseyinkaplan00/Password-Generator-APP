@@ -1,0 +1,48 @@
+// google font
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
+
+
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &::selection {
+        background-color: black;
+        -webkit-text-fill-color: rgb(249, 0, 0);
+    }
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+
+
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    max-height: 100vh;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrapper,
+.input-box {
+    position: relative;
+}
